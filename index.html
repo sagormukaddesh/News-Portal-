@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News Portal</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+
+<body class="container mx-auto">
+    <div id="category-bar-container" class="flex mx-auto justify-center text-center category-bar py-4 bg-slate-500">
+        <!-- <button class="text-2xl font-extrabold text-white uppercase "> Politics</button> -->
+
+    </div>
+    <div class="search-container my-10 mx-auto text-center ">
+        <div class="join">
+            <input id="search-box" class="px-10 input input-bordered border-black join-item"
+                placeholder="Type Category Name.." />
+            <button onclick="handleSearch()" id="search-btn"
+                class="btn join-item border-black btn-info px-8 rounded-r-full">Search</button>
+        </div>
+
+    </div>
+
+
+    <!-- <div class="hero  bg-slate-300 rounded-xl w-[70%] mx-auto">
+            <div class="hero-content  flex-col lg:flex-row">
+                <img src="https://c8.alamy.com/comp/2BEAFRR/tv-news-studio-with-broadcaster-and-breaking-world-background-vector-illustration-breaking-news-on-tv-broadcasting-journalist-2BEAFRR.jpg"
+                    class="max-w-sm rounded-lg shadow-2xl" />
+                <div>
+                    <h1 class="text-5xl font-bold">Box Office News!</h1>
+                    <p class="py-6">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi
+                        exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
+                    <div class="flex justify-between">
+                        <div class="avatar">
+                            <div class="w-16 rounded-full">
+                                <img src="https://daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg" />
+                            </div>
+                        </div>
+                        <button class="btn btn-info px-10 ">Details</button>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+
+
+    <div id="news-container">
+
+    </div>
+
+    <div class="mx-auto text-center my-4 hidden" id="loading-spinner">
+        <span class="loading loading-dots loading-lg"></span>
+    </div>
+    <script src="./scripts/app.js"></script>
+</body>
+
+</html>
